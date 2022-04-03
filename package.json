@@ -1,0 +1,29 @@
+{
+  "name": "discordmusicbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rafael Barros <rafaelnogueirabarr@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-json-modules index.js"
+  },
+  "engines": {
+    "node": "16.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "pino": "^7.9.2",
+    "pino-pretty": "^7.6.0"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.7.0",
+    "@discordjs/voice": "^0.8.0",
+    "discord-player": "^5.2.2",
+    "discord.js": "^13.6.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^4.11.0"
+  }
+}

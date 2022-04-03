@@ -1,0 +1,18 @@
+version: "2.1"
+
+services:
+  discord-music-bot:
+    image: discord-music-bot
+    build: .
+    environment:
+      PORT: 3333
+    command:
+      - npm
+      - start
+    volumes:
+      - .:/discord-music-bot
+      - node_modules:/discord-music-bot/node_modules
+    ports:
+      - 3333:3333
+volumes:
+  node_modules: {}
